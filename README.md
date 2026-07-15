@@ -1,2 +1,2 @@
-# World-Cup-Fuzzy-Estimator
-Fuzzy estimator themed on the 2026 world cup matches 
+# Football-estimator-using-fuzzy-theory
+Evaluate the dominance and outcome trends of football matchups using Fuzzy Theory, quantifying abstract and subjective performance factors.
