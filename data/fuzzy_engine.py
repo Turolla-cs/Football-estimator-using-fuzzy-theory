@@ -1,5 +1,6 @@
 import numpy as np
 import skfuzzy as fuzz
+
 from skfuzzy import control as ctrl
 
 #Attack sub system
@@ -18,3 +19,5 @@ defensiveDominance = ctrl.Consequent(np.arange(0,11,1), 'Defensive dominance')
 ballPossesion = ctrl.Antecedent(np.arange(0,11,1), 'Ball possesion')
 possesionDominance = ctrl.Consequent(np.arange(0,11,1), 'Possesion dominance')
 
+#Attack system rules
+attackRule1 = ctrl.Rule(goalsAttack['low'] & chancesAttack['low'] & cornersAttack['low'], offensiveDominance['very low'])
