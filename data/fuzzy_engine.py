@@ -2,6 +2,12 @@ import numpy as np
 import skfuzzy as fuzz
 
 from skfuzzy import control as ctrl
+from dataclasses import dataclass
+
+@dataclass
+class Result:
+    output1: float
+    output2: float
 
 #Attack sub system
 goalsAttack = ctrl.Antecedent(np.arange(0,11,1), 'Goal scored per game')
@@ -18,6 +24,14 @@ defensiveDominance = ctrl.Consequent(np.arange(0,11,1), 'Defensive dominance')
 #Control sub system
 ballPossesion = ctrl.Antecedent(np.arange(0,11,1), 'Ball possesion')
 
+#Result sub system
+homeAdominance = ctrl.Antecedent(np.arange(0,11,1), 'Home team offensive dominance')
+homeDdominance = ctrl.Antecedent(np.arange(0,11,1), 'Home team defensive dominance')
+awayAdominance = ctrl.Antecedent(np.arange(0,11,1), 'Away team offensive dominance')
+awayDdominance = ctrl.Antecedent(np.arange(0,11,1), 'Away team defensive dominance')
+homeW = ctrl.Consequent(np.arange(0,11,1), 'Home Winning prediction')
+awayW = ctrl.Consequent(np.arange(0,11,1), 'Away Winning prediction')
+
 #Functions 
 goalsAttack.automf(3)
 chancesAttack.automf(3)
@@ -26,6 +40,12 @@ goalsDefense.automf(3)
 chancesDefense.automf(3)
 cornersDefense.automf(3)
 ballPossesion.automf(3)
+homeAdominance.automf(3)
+homeDdominance.automf(3)
+awayDdominance.automf(3)
+awayAdominance.automf(3)
+homeW.automf(3)
+awayW.automf(3)
 
 offensiveDominance['very poor'] = fuzz.trimf(offensiveDominance.universe, [0,2,4])
 offensiveDominance['poor'] = fuzz.trimf(offensiveDominance.universe, [0,4,6])
@@ -60,9 +80,74 @@ rules_defense = [
     ctrl.Rule(ballPossesion['poor'] & goalsDefense['good'] & chancesDefense['good'], defensiveDominance['very poor'])
 ]
 
+rules_result = [
+    ctrl.Rule(homeAdominance['good'] & awayDdominance['poor'], homeW['good']),
+    ctrl.Rule(homeAdominance['good'] & awayDdominance['poor'], awayW['poor']),
+    
+    ctrl.Rule(awayAdominance['good'] & homeDdominance['poor'], awayW['good']),
+    ctrl.Rule(awayAdominance['good'] & homeDdominance['poor'], homeW['poor']),
+    
+    ctrl.Rule(homeDdominance['good'] & awayAdominance['poor'], homeW['good']),
+    ctrl.Rule(homeDdominance['good'] & awayAdominance['poor'], awayW['poor']),
+    
+    ctrl.Rule(awayDdominance['good'] & homeAdominance['poor'], awayW['good']),
+    ctrl.Rule(awayDdominance['good'] & homeAdominance['poor'], homeW['poor']),
+    
+    ctrl.Rule(homeAdominance['average'] & awayDdominance['average'], homeW['average']),
+    ctrl.Rule(awayAdominance['average'] & homeDdominance['average'], awayW['average']),
+    
+    ctrl.Rule(homeAdominance['good'] & awayDdominance['good'], homeW['average']),
+    ctrl.Rule(awayAdominance['good'] & homeDdominance['good'], awayW['average']),
+    
+    ctrl.Rule(homeAdominance['poor'] & awayDdominance['poor'], homeW['average']),
+    ctrl.Rule(awayAdominance['poor'] & homeDdominance['poor'], awayW['average'])
+]
+
 attack_control_sys = ctrl.ControlSystem(rules_attack)
 defense_control_sys = ctrl.ControlSystem(rules_defense)
-
+result_control_sys = ctrl.ControlSystem(rules_result)
 
 simulator_attack = ctrl.ControlSystemSimulation(attack_control_sys)
 simulator_defense = ctrl.ControlSystemSimulation(defense_control_sys)
+simulator_result = ctrl.ControlSystemSimulation(result_control_sys)
+
+def calculate_fuzzy_prediction(home_team_attack, home_team_defense, away_team_attack, away_team_defense):
+    simulator_attack.input['Goal scored per game'] = home_team_attack.goals
+    simulator_attack.input['Big chances created per game'] = home_team_attack.chances
+    simulator_attack.input['Offensive corners earned per game'] = home_team_attack.corners
+    simulator_attack.input['Ball possesion'] = home_team_attack.possesion
+    simulator_defense.input['Goal suffered per game'] = home_team_defense.goals
+    simulator_defense.input['Big chances conceded per game'] = home_team_defense.chances
+    simulator_defense.input['Defensive corners earned per game'] = home_team_defense.corners
+    simulator_defense.input['Ball possesion'] = home_team_defense.possesion
+    simulator_attack.compute()
+    simulator_defense.compute()
+    simulator_result.input['Home team offensive dominance'] = simulator_attack.output['Offensive dominance']
+    simulator_result.input['Home team defensive dominance'] = simulator_defense.output['Defensive dominance']
+
+
+    simulator_attack.input['Goal scored per game'] = away_team_attack.goals
+    simulator_attack.input['Big chances created per game'] = away_team_attack.chances
+    simulator_attack.input['Offensive corners earned per game'] = away_team_attack.corners
+    simulator_attack.input['Ball possesion'] = away_team_attack.possesion
+    simulator_defense.input['Goal suffered per game'] = away_team_defense.goals
+    simulator_defense.input['Big chances conceded per game'] = away_team_defense.chances
+    simulator_defense.input['Defensive corners earned per game'] = away_team_defense.corners
+    simulator_defense.input['Ball possesion'] = away_team_defense.possesion
+    simulator_attack.compute()
+    simulator_defense.compute()
+    simulator_result.input['Away team offensive dominance'] = simulator_attack.output['Offensive dominance']
+    simulator_result.input['Away team defensive dominance'] = simulator_defense.output['Defensive dominance']
+    
+
+    simulator_result.compute()
+    x = Result(
+        output1=simulator_result.output['Home Winning prediction'], 
+        output2=simulator_result.output['Away Winning prediction']
+    )
+    return x
+
+
+
+
+
