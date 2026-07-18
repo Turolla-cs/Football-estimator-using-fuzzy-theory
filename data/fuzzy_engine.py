@@ -21,8 +21,6 @@ chancesDefense= ctrl.Antecedent(np.arange(0,11,1), 'Big chances conceded per gam
 cornersDefense = ctrl.Antecedent(np.arange(0,11,1), 'Defensive corners earned per game')
 defensiveDominance = ctrl.Consequent(np.arange(0,11,1), 'Defensive dominance')
 
-#Control sub system
-ballPossesion = ctrl.Antecedent(np.arange(0,11,1), 'Ball possesion')
 
 #Result sub system
 homeAdominance = ctrl.Antecedent(np.arange(0,11,1), 'Home team offensive dominance')
@@ -39,7 +37,6 @@ cornersAttack.automf(3)
 goalsDefense.automf(3)
 chancesDefense.automf(3)
 cornersDefense.automf(3)
-ballPossesion.automf(3)
 homeAdominance.automf(3)
 homeDdominance.automf(3)
 awayDdominance.automf(3)
@@ -60,24 +57,25 @@ defensiveDominance['good'] = fuzz.trimf(defensiveDominance.universe, [5,10,10])
 #Rules
 rules_attack = [
     ctrl.Rule(goalsAttack['good'] & chancesAttack['good'], offensiveDominance['good']),
-    ctrl.Rule(ballPossesion['good'] & chancesAttack['good'] & cornersAttack['good'], offensiveDominance['good']),
-    ctrl.Rule(ballPossesion['poor'] & chancesAttack['good'] & goalsAttack['average'], offensiveDominance['average']),
+    ctrl.Rule(chancesAttack['good'] & cornersAttack['good'], offensiveDominance['good']),
+    ctrl.Rule(chancesAttack['good'] & goalsAttack['average'], offensiveDominance['average']),
     ctrl.Rule(goalsAttack['average'] & chancesAttack['average'], offensiveDominance['average']),
-    ctrl.Rule(ballPossesion['average'] & chancesAttack['average'] & cornersAttack['average'], offensiveDominance['average']),
-    ctrl.Rule(ballPossesion['good'] & chancesAttack['poor'] & goalsAttack['poor'], offensiveDominance['poor']),
+    ctrl.Rule(chancesAttack['average'] & cornersAttack['average'], offensiveDominance['average']),
+    ctrl.Rule(chancesAttack['poor'] & goalsAttack['poor'], offensiveDominance['poor']),
     ctrl.Rule(goalsAttack['poor'] & chancesAttack['average'], offensiveDominance['poor']),
     ctrl.Rule(goalsAttack['poor'] & chancesAttack['poor'] & cornersAttack['poor'], offensiveDominance['very poor'])
 ]
 
+
 rules_defense = [
     ctrl.Rule(goalsDefense['poor'] & chancesDefense['poor'], defensiveDominance['good']),
-    ctrl.Rule(ballPossesion['good'] & chancesDefense['poor'] & cornersDefense['poor'], defensiveDominance['good']),
-    ctrl.Rule(ballPossesion['poor'] & goalsDefense['poor'] & chancesDefense['average'], defensiveDominance['average']),
+    ctrl.Rule(chancesDefense['poor'] & cornersDefense['poor'], defensiveDominance['good']),
+    ctrl.Rule(goalsDefense['poor'] & chancesDefense['average'], defensiveDominance['average']),
     ctrl.Rule(goalsDefense['average'] & chancesDefense['average'], defensiveDominance['average']),
-    ctrl.Rule(ballPossesion['good'] & chancesDefense['good'], defensiveDominance['poor']),
+    ctrl.Rule(chancesDefense['good'], defensiveDominance['poor']),
     ctrl.Rule(goalsDefense['good'] | chancesDefense['good'], defensiveDominance['poor']),
     ctrl.Rule(goalsDefense['good'] & chancesDefense['good'] & cornersDefense['good'], defensiveDominance['very poor']),
-    ctrl.Rule(ballPossesion['poor'] & goalsDefense['good'] & chancesDefense['good'], defensiveDominance['very poor'])
+    ctrl.Rule(goalsDefense['good'] & chancesDefense['good'], defensiveDominance['very poor'])
 ]
 
 rules_result = [
@@ -112,28 +110,24 @@ simulator_defense = ctrl.ControlSystemSimulation(defense_control_sys)
 simulator_result = ctrl.ControlSystemSimulation(result_control_sys)
 
 def calculate_fuzzy_prediction(home_team_attack, home_team_defense, away_team_attack, away_team_defense):
-    simulator_attack.input['Goal scored per game'] = home_team_attack.goals
-    simulator_attack.input['Big chances created per game'] = home_team_attack.chances
-    simulator_attack.input['Offensive corners earned per game'] = home_team_attack.corners
-    simulator_attack.input['Ball possesion'] = home_team_attack.possesion
-    simulator_defense.input['Goal suffered per game'] = home_team_defense.goals
-    simulator_defense.input['Big chances conceded per game'] = home_team_defense.chances
-    simulator_defense.input['Defensive corners earned per game'] = home_team_defense.corners
-    simulator_defense.input['Ball possesion'] = home_team_defense.possesion
+    simulator_attack.input['Goal scored per game'] = home_team_attack["goals_scored_per_game"]
+    simulator_attack.input['Big chances created per game'] = home_team_attack["shots_pro"]
+    simulator_attack.input['Offensive corners earned per game'] = home_team_attack["corners_pro"]
+    simulator_defense.input['Goal suffered per game'] = home_team_defense["goals_suffered_per_game"]
+    simulator_defense.input['Big chances conceded per game'] = home_team_defense["shots_against"]
+    simulator_defense.input['Defensive corners earned per game'] = home_team_defense["corners_against"]
     simulator_attack.compute()
     simulator_defense.compute()
     simulator_result.input['Home team offensive dominance'] = simulator_attack.output['Offensive dominance']
     simulator_result.input['Home team defensive dominance'] = simulator_defense.output['Defensive dominance']
 
 
-    simulator_attack.input['Goal scored per game'] = away_team_attack.goals
-    simulator_attack.input['Big chances created per game'] = away_team_attack.chances
-    simulator_attack.input['Offensive corners earned per game'] = away_team_attack.corners
-    simulator_attack.input['Ball possesion'] = away_team_attack.possesion
-    simulator_defense.input['Goal suffered per game'] = away_team_defense.goals
-    simulator_defense.input['Big chances conceded per game'] = away_team_defense.chances
-    simulator_defense.input['Defensive corners earned per game'] = away_team_defense.corners
-    simulator_defense.input['Ball possesion'] = away_team_defense.possesion
+    simulator_attack.input['Goal scored per game'] = away_team_attack["goals_scored_per_game"]
+    simulator_attack.input['Big chances created per game'] = away_team_attack["shots_pro"]
+    simulator_attack.input['Offensive corners earned per game'] = away_team_attack["corners_pro"]
+    simulator_defense.input['Goal suffered per game'] = away_team_defense["goals_suffered_per_game"]
+    simulator_defense.input['Big chances conceded per game'] = away_team_defense["shots_against"]
+    simulator_defense.input['Defensive corners earned per game'] = away_team_defense["corners_against"]
     simulator_attack.compute()
     simulator_defense.compute()
     simulator_result.input['Away team offensive dominance'] = simulator_attack.output['Offensive dominance']
