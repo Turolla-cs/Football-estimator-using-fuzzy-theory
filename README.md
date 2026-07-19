@@ -21,7 +21,7 @@ A Python-based AI tool that uses Fuzzy Logic and real-time football statistics t
 2. Create a virtual enviroment (using package manager uv):
     `uv` creates the environment inside a directory named `.venv` by default, which is the standard convention for Python projects.
 3. Install dependencies:
-    uv add requests python-dotenv google-genai numpy scikit-fuzzy
+    uv add requests python-dotenv google-genai numpy scikit-fuzzy scipy packaging networkx
 4. Configure your environment variables:
     * Create a file named .env in the root folder.
     * Add your keys:

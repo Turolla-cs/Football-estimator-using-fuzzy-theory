@@ -27,7 +27,6 @@ def prediction(home_team: str, away_team: str) -> str:
     away_data_defense = away["defense"]
     result = calculate_fuzzy_prediction(home_data_attack, home_data_defense, away_data_attack, away_data_defense)
     return f"{home_team} has a {result.output1} chance of ''Winning'' this match and {away_team} has a {result.output2} chance of ''Winning'' this match (chances measured from 0 to 10)"
-    #fazer ainda tratamento de erros e colocar algum printf de loading pra não parecer que travou
     
 
 chat = client.chats.create(
@@ -41,7 +40,7 @@ chat = client.chats.create(
 
 
 def activate():
-    print("Type 'quit' to exit the application.")
+    print("\nType 'quit' to exit the application.\n\n")
     while True:
         try:
             question = input("\nYou: ")
