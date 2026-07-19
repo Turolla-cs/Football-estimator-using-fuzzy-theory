@@ -131,7 +131,7 @@ TEAMS_MAPPING = {
 }
 
 
-def search_api_data(team: str, season: int = 2026) -> dict:
+def search_api_data(team: str, season: int = 2024) -> dict:
 
     team_data = TEAMS_MAPPING.get(team)
     if not team_data:
@@ -163,7 +163,6 @@ def search_api_data(team: str, season: int = 2026) -> dict:
             response = requests.get(endpoint, headers=HEADERS, params=params)
             response.raise_for_status()
             brute_data = response.json()
-            print(brute_data)
             
             with open(archive, "w", encoding="utf-8") as f:
                 json.dump(brute_data, f, indent=4)

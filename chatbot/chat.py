@@ -30,7 +30,7 @@ def prediction(home_team: str, away_team: str) -> str:
     
 
 chat = client.chats.create(
-    model ="gemini-2.5-flash",
+    model ="models/gemini-3.1-flash-lite",
     config={
         "system_instruction": "You are a soccer match outcome predictor. Whenever the user asks for a prediction, use the provided tool to obtain the actual data calculated by the fuzzy system. Respond politely, explaining the prediction based EXCLUSIVELY on the numbers returned by the tool. Do not invent data. ONLY accepts request with teams that play in la liga or serie A or league one or premier league or bundesliga or brasileirão serie A",
         "temperature": 0.7,
