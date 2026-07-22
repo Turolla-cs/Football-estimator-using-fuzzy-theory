@@ -135,16 +135,19 @@ def search_api_data(team: str, season: int = 2024) -> dict:
 
     team_data = TEAMS_MAPPING.get(team)
     if not team_data:
-        return {"status": "error", "mensage": f"The team '{team}' is not in our sistem."}
+        return {"status": "error", "mensage": f"The team '{team}' is not in our system."}
     
     team_id = team_data["team_id"]
     league_id = team_data["league_id"]
 
-    cache_directory = "data cache"
+    cache_directory = "data_cache"
     os.makedirs(cache_directory, exist_ok=True)
     date = datetime.now().strftime("%Y-%m-%d")
     archive = f"{cache_directory}/stats_team_{team}_{date}.json"
 
+    brute_data = None
+
+   
     if os.path.exists(archive):
         print(f"[INFO] Reading data from local cache for {team}...")
         with open(archive, "r", encoding="utf-8") as file:
@@ -152,7 +155,6 @@ def search_api_data(team: str, season: int = 2024) -> dict:
     else:
         print(f"[INFO] Downloading data from API-Football for {team}...")
         endpoint = f"{BASE_URL}teams/statistics"
-
         params = {
             "team": team_id,
             "league": league_id,
@@ -169,21 +171,19 @@ def search_api_data(team: str, season: int = 2024) -> dict:
         except requests.exceptions.RequestException:
             return {"status": "error", "mensage": "Failed to connect to the API"}
         
-        try:
-            stats = brute_data["response"]
-            clean_data = {
-                "attack": {
-                    "gols_scored_per_game": float(stats["goals"]["for"]["average"]["total"]),
-                    "shots_pro": int(stats["shots"]["for"]["total"]),
-                    "corners_pro": int(stats["corners"]["for"]["total"]),
-                },
-                "defense": {
-                    "gols_suffered_per_game": float(stats["goals"]["against"]["average"]["total"]),
-                    "shots_against": int(stats["shots"]["against"]["total"]),
-                    "corners_against": int(stats["corners"]["against"]["total"]),
-                }
+    try:
+        stats = brute_data["response"]
+        clean_data = {
+            "attack": {
+                "goals_scored_per_game": float(stats["goals"]["for"]["average"]["total"]),
+                "wins_percentage": (int(stats["fixtures"]["wins"]["total"])/int(stats["fixtures"]["played"]["total"]))*10,
+            },
+            "defense": {
+                "goals_suffered_per_game": float(stats["goals"]["against"]["average"]["total"]),
+                "clean_sheets_percentage": (int(stats["clean_sheet"]["total"])/int(stats["fixtures"]["played"]["total"]))*10,
             }
-            return clean_data
-        except (KeyError, TypeError):
-            return {"status": "error", "mensage": "Data came on a unexpected format."}
+        }
+        return clean_data
+    except (KeyError, TypeError):
+        return {"status": "error", "mensage": "Data came on a unexpected format."}
 

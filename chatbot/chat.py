@@ -20,11 +20,17 @@ def prediction(home_team: str, away_team: str) -> str:
     print(f"\n[System: Gemini activated the Fuzzy engine for {home_team} vs {away_team}...]\n")
     
     home = search_api_data(home_team.upper())
-    home_data_attack = home["attack"]
-    home_data_defense = home["defense"]
     away = search_api_data(away_team.upper())
-    away_data_attack = away["attack"]
-    away_data_defense = away["defense"]
+
+    try:
+        home_data_attack = home["attack"]
+        home_data_defense = home["defense"]
+        away_data_attack = away["attack"]
+        away_data_defense = away["defense"]
+    except (KeyError, TypeError) as e:
+        return f"Error processing match data structure: {e}"
+
+
     result = calculate_fuzzy_prediction(home_data_attack, home_data_defense, away_data_attack, away_data_defense)
     return f"{home_team} has a {result.output1} chance of ''Winning'' this match and {away_team} has a {result.output2} chance of ''Winning'' this match (chances measured from 0 to 10)"
     
@@ -32,7 +38,7 @@ def prediction(home_team: str, away_team: str) -> str:
 chat = client.chats.create(
     model ="models/gemini-3.1-flash-lite",
     config={
-        "system_instruction": "You are a soccer match outcome predictor. Whenever the user asks for a prediction, use the provided tool to obtain the actual data calculated by the fuzzy system. Respond politely, explaining the prediction based EXCLUSIVELY on the numbers returned by the tool. Do not invent data. ONLY accepts request with teams that play in la liga or serie A or league one or premier league or bundesliga or brasileirão serie A",
+        "system_instruction": "You are a soccer match outcome predictor and informer. Whenever the user asks for a prediction, use the provided tool to obtain the actual data calculated by the fuzzy system. Respond politely, explaining the prediction based EXCLUSIVELY on the numbers returned by the tool. Do not invent data. ONLY accepts request with teams that play in la liga or serie A or league one or premier league or bundesliga or brasileirão serie A. When someone asks for information you do NOT invent data and use your searching tools to inform about the asked team.",
         "temperature": 0.7,
         "tools": [prediction] 
     },
