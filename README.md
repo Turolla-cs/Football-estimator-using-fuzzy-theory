@@ -5,7 +5,7 @@
 
 ## Features
 - **Fuzzy Logic Engine:** Calculates offensive and defensive dominance using scikit-fuzzy.
-- **AI-Powered Interface:** Chat with the assistant to get match predictions.
+- **AI-Powered Interface:** Chat with the assistant to get match predictions and historical team information.
 - **Efficient Caching:** Built-in daily cache system to optimize API usage.
 
 ## Prerequisites
