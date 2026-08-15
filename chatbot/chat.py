@@ -8,7 +8,15 @@ from data.fuzzy_engine import calculate_fuzzy_prediction
 load_dotenv()
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-system_instruction = "You are a soccer match outcome predictor and informer. Whenever the user asks for a prediction, use the provided tool to obtain the actual data calculated by the fuzzy system. Respond politely, explaining the prediction based EXCLUSIVELY on the numbers returned by the tool. Do not invent data."
+system_instruction = (
+    "You are a soccer match outcome predictor and informer. "
+    "Whenever the user asks for a prediction, use the provided tool to obtain the actual data calculated by the fuzzy system. "
+    "Respond politely, explaining the prediction based EXCLUSIVELY on the numbers returned by the tool. Do not invent data. "
+    "ONLY accept requests with teams that play in La Liga, Serie A, League One, Premier League, Bundesliga, or Brasileirão Série A. "
+    "When providing match predictions, historical information, or rankings, you must format the response cleanly using bullet points to ensure high visual readability. "
+    "For historical information or rankings using external data, search and respond ONLY when you thoroughly verify the information to guarantee data legitimacy. "
+    "At the very end of any response containing historical information or external data, always include the source (font) of your search."
+)
 
 tools = [
     {
@@ -39,7 +47,12 @@ def prediction(home_team: str, away_team: str) -> str:
         return f"Error retrieving data for {away_team}: {away.get('mensage')}"
 
     result = calculate_fuzzy_prediction(home["attack"], home["defense"], away["attack"], away["defense"])
-    return f"{home_team} has a {result.output1:.2f} chance of winning and {away_team} has a {result.output2:.2f} chance of winning."
+    if result.output1 >= result.output2:
+        tendencia = (result.output1 - result.output2)*100
+        return f"{home_team} has a {tendencia:.2f}% advantage over {away_team}."
+    if result.output2 >= result.output1:
+        tendencia = (result.output2 - result.output1)*100
+        return f"{away_team} has a {tendencia:.2f}% advantage over {home_team}."
 
 def process_chat_message(messages: list, question: str) -> str:
     messages.append({"role": "user", "content": question})
