@@ -22,7 +22,6 @@
             </div>
             <nav class="hidden lg:flex items-center gap-xl h-full" data-active-classes="text-primary border-b-2 border-primary">
                 <a aria-current="page" class="h-full flex items-center font-label-caps uppercase transition-all text-primary border-b-2 border-primary" data-path="tactical-board" href="#">Tactical Board</a>
-                <a class="h-full flex items-center font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-all border-b-2 border-transparent" data-path="historical-board" href="#">Historical Board</a>
             </nav>
             <div class="flex items-center gap-md">
                 <div class="px-md py-xs bg-surface-container-high rounded-full border border-outline-variant/20 flex items-center gap-xs">
@@ -57,7 +56,7 @@
                     <div class="bg-surface-container/60 backdrop-blur-md rounded-xl p-lg border border-outline-variant/20 shadow-xl flex flex-col gap-lg w-full relative overflow-hidden group">
                         <div class="absolute -inset-4 bg-primary/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
                         <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl z-10">
-                            Engine online. Conectado ao servidor tático. Como posso ajudar nas análises de hoje?
+                            Engine online. Conected to the tatical server. How can i help you on today analysis?
                         </p>
                     </div>
                 </div>
@@ -71,7 +70,6 @@
                         </button>
                         <input class="flex-1 bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 px-sm py-sm" id="tactical-input" placeholder="Query the tactical engine..." type="text"/>
                         
-                        <!-- Adicionei o ID 'send-btn' aqui para facilitar a captura no JS -->
                         <button id="send-btn" aria-label="Send query" class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary rounded-lg hover:bg-primary-fixed transition-colors shadow-sm ml-xs group-focus-within:bg-primary-fixed-dim">
                             <span class="material-symbols-outlined">send</span>
                         </button>
@@ -99,20 +97,17 @@
             </style>
 
             <script>
-                // 1. Configurações e Elementos da DOM
                 const FASTAPI_URL = "http://localhost:8000/api/chat"; 
                 
                 const inputEl = document.getElementById('tactical-input');
                 const btnSend = document.getElementById('send-btn');
                 const chatStream = document.getElementById('chat-stream');
 
-                // Helper para pegar a hora atual no formato HH:MM
                 const getHoraAtual = () => {
                     const agora = new Date();
                     return `${agora.getHours().toString().padStart(2, '0')}:${agora.getMinutes().toString().padStart(2, '0')}`;
                 };
 
-                // 2. Funções de Renderização (UI)
                 function renderizarMensagemUsuario(texto) {
                     const html = `
                         <div class="flex flex-col items-end gap-xs w-full max-w-3xl ml-auto opacity-0 translate-y-4" style="animation: fadeUp 0.4s ease-out forwards;">
@@ -164,34 +159,27 @@
                     if (indicador) indicador.remove();
                 }
 
-                // 3. Lógica Central de Comunicação (O Garçom)
                 async function processarEnvio() {
                     const texto = inputEl.value.trim();
                     if (!texto) return;
 
-                    // Atualiza a tela com o texto do usuário
                     renderizarMensagemUsuario(texto);
                     inputEl.value = '';
                     
-                    // Mostra feedback visual
                     mostrarDigitando();
 
                     try {
-                        // Faz o POST para o FastAPI
                         const response = await fetch(FASTAPI_URL, {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'
                             },
-                            // Garantindo que a chave do JSON ("mensagem") seja a que seu FastAPI espera
                             body: JSON.stringify({ mensagem: texto }) 
                         });
 
                         const data = await response.json();
                         removerDigitando();
                         
-                        // Renderiza a resposta. 
-                        // Assumimos que o FastAPI retorna um JSON do tipo: {"resposta": "texto da IA"}
                         renderizarMensagemBot(data.resposta || "Resposta recebida, mas formato não reconhecido.");
 
                     } catch (error) {
@@ -201,7 +189,6 @@
                     }
                 }
 
-                // 4. Listeners de Eventos
                 btnSend.addEventListener('click', processarEnvio);
                 
                 inputEl.addEventListener('keypress', (e) => {
@@ -211,7 +198,6 @@
                     }
                 });
 
-                // Auto-focus ao carregar
                 setTimeout(() => inputEl.focus(), 1500);
             </script>
         </div>
