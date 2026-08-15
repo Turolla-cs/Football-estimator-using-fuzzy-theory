@@ -31,11 +31,12 @@ tools = [
 def prediction(home_team: str, away_team: str) -> str:
     home = search_api_data(home_team)
     away = search_api_data(away_team)
-    
-    if isinstance(home, dict) and home.get("status") == "error":
-        return f"Erro no mandante: {home.get('message')}"
-    if isinstance(away, dict) and away.get("status") == "error":
-        return f"Erro no visitante: {away.get('message')}"
+
+    if home.get("status") == "error":
+        return f"Error retrieving data for {home_team}: {home.get('mensage')}"
+            
+    if away.get("status") == "error":
+        return f"Error retrieving data for {away_team}: {away.get('mensage')}"
 
     result = calculate_fuzzy_prediction(home["attack"], home["defense"], away["attack"], away["defense"])
     return f"{home_team} has a {result.output1:.2f} chance of winning and {away_team} has a {result.output2:.2f} chance of winning."
