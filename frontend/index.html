@@ -1,132 +1,220 @@
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#ffb4ac","surface-dim":"#0f1412","surface-variant":"#313633","on-primary-fixed":"#002113","tertiary-container":"#ff7a6f","on-primary-container":"#00422b","secondary-fixed":"#79ff5b","on-secondary-fixed":"#022100","inverse-on-surface":"#2c322f","primary-fixed-dim":"#4edea3","on-secondary":"#053900","secondary-fixed-dim":"#2ae500","inverse-surface":"#dfe4e0","surface-container-highest":"#313633","on-secondary-fixed-variant":"#095300","on-tertiary-fixed-variant":"#8e1214","tertiary":"#ffb4ac","on-secondary-container":"#0f6d00","surface-container-high":"#262b29","secondary-container":"#2ff801","error-container":"#93000a","on-tertiary-fixed":"#410002","on-tertiary":"#690007","on-surface-variant":"#bbcabf","primary-container":"#10b981","outline-variant":"#3c4a42","outline":"#86948a","background":"#0f1412","on-background":"#dfe4e0","tertiary-fixed":"#ffdad6","on-primary":"#003824","on-tertiary-container":"#790009","primary":"#4edea3","surface-tint":"#4edea3","surface-container-lowest":"#0a0f0d","secondary":"#d7ffc5","surface-container":"#1c211e","surface":"#0f1412","on-error-container":"#ffdad6","on-surface":"#dfe4e0","on-error":"#690005","inverse-primary":"#006c49","error":"#ffb4ab","surface-container-low":"#181d1a","primary-fixed":"#6ffbbe","on-primary-fixed-variant":"#005236","surface-bright":"#353a38"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"xl":"32px","xs":"8px","column-gutter":"16px","lg":"24px","md":"16px","container-margin":"24px","base":"4px","sm":"12px"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"data-mono-sm":["JetBrains Mono"],"label-caps":["Inter"],"body-md":["Inter"],"data-mono-lg":["JetBrains Mono"],"display-xl":["Plus Jakarta Sans"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"data-mono-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-mono-lg":["18px",{"lineHeight":"24px","fontWeight":"500"}],"display-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-surface selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-2xl border-b border-outline-variant/10"><div class="h-20 w-full px-container-margin flex items-center justify-between"><div class="flex items-center gap-md"><div class="w-10 h-10 bg-primary/10 border border-primary/20 flex items-center justify-center rounded-lg"><span class="material-symbols-outlined text-primary text-[24px]">query_stats</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md leading-none tracking-tight text-on-surface">FutAnalytica</span><span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Tactical Intelligence</span></div></div><nav class="hidden lg:flex items-center gap-xl h-full" data-active-classes="text-primary border-b-2 border-primary"><a aria-current="page" class="h-full flex items-center font-label-caps uppercase transition-all text-primary border-b-2 border-primary" data-path="tactical-board" href="#">Tactical Board</a><a class="h-full flex items-center font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-all border-b-2 border-transparent" data-path="historical-board" href="#">Historical Board</a></nav><div class="flex items-center gap-md"><div class="px-md py-xs bg-surface-container-high rounded-full border border-outline-variant/20 flex items-center gap-xs"><div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div><span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Live Engine</span></div><div class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center overflow-hidden hover:border-primary/50 transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant">account_circle</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full h-[calc(100vh-5rem)] relative overflow-hidden bg-surface-container-lowest text-on-surface">
-<!-- Ambient Field Guidelines -->
-<div class="absolute inset-0 pointer-events-none opacity-[0.03]">
-<div class="absolute left-1/2 top-0 bottom-0 w-px bg-on-surface -translate-x-1/2"></div>
-<div class="absolute left-1/2 top-1/2 w-64 h-64 border border-on-surface rounded-full -translate-x-1/2 -translate-y-1/2"></div>
-<div class="absolute left-1/4 top-0 bottom-0 w-px bg-on-surface border-dashed"></div>
-<div class="absolute right-1/4 top-0 bottom-0 w-px bg-on-surface border-dashed"></div>
-</div>
-<!-- Chat Stream Area -->
-<div class="flex-1 overflow-y-auto px-container-margin py-xl flex flex-col gap-xl relative z-10 scroll-smooth" id="chat-stream">
-<!-- User Message -->
-<div class="flex flex-col items-end gap-xs w-full max-w-3xl ml-auto opacity-0 translate-y-4" style="animation: fadeUp 0.4s ease-out forwards;">
-<div class="px-md py-sm bg-surface-container-high rounded-xl rounded-tr-sm shadow-sm border border-outline-variant/10">
-<p class="font-body-md text-body-md text-on-surface">Previsão para Liverpool vs Man City?</p>
-</div>
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mr-1">14:32</span>
-</div>
-<!-- AI Response (Tactical Card) -->
-<div class="flex flex-col items-start gap-xs w-full max-w-4xl opacity-0 translate-y-4" style="animation: fadeUp 0.5s ease-out 0.2s forwards;">
-<div class="flex items-center gap-sm mb-1">
-<div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 shadow-[0_0_15px_rgba(78,222,163,0.1)]">
-<span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
-</div>
-<span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Engine Insight v4.2</span>
-</div>
-<div class="bg-surface-container/60 backdrop-blur-md rounded-xl p-lg border border-outline-variant/20 shadow-xl flex flex-col gap-lg w-full relative overflow-hidden group">
-<!-- Subtle inner glow effect -->
-<div class="absolute -inset-4 bg-primary/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
-<div class="flex items-center justify-between z-10">
-<h3 class="font-headline-md text-headline-md text-on-surface">Liverpool vs Manchester City</h3>
-<div class="px-sm py-base bg-surface-container-highest rounded-full border border-outline-variant/30 flex items-center gap-xs">
-<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Anfield (High Variance)</span>
-</div>
-</div>
-<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl z-10">
-                    Model analysis indicates a highly contested midfield battle. Liverpool's high press is showing a 12% increase in efficiency at home, counteracting City's possession dominance. Fuzzy logic projection favors a narrow home advantage.
-                </p>
-<!-- Triple Bar Scale -->
-<div class="flex flex-col gap-sm mt-md z-10">
-<div class="flex justify-between items-end mb-1">
-<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-widest">Outcome Probability (Fuzzy Logic Model)</span>
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Confidence: 87%</span>
-</div>
-<!-- Win Bar -->
-<div class="relative w-full h-8 bg-surface-container-highest rounded overflow-hidden flex items-center group/bar cursor-default">
-<div class="absolute top-0 left-0 bottom-0 bg-primary/90 rounded shadow-[0_0_10px_rgba(78,222,163,0.4)] w-[45.2%] transition-all duration-1000 ease-out origin-left scale-x-0" style="animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;"></div>
-<div class="absolute inset-0 flex items-center justify-between px-md z-10">
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface mix-blend-difference font-semibold">LIV WIN</span>
-<span class="font-data-mono-lg text-data-mono-lg text-on-surface mix-blend-difference">45.2%</span>
-</div>
-</div>
-<!-- Draw Bar -->
-<div class="relative w-full h-8 bg-surface-container-highest rounded overflow-hidden flex items-center group/bar cursor-default mt-xs">
-<div class="absolute top-0 left-0 bottom-0 bg-outline/50 rounded w-[31.5%] transition-all duration-1000 ease-out origin-left scale-x-0" style="animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.7s forwards;"></div>
-<div class="absolute inset-0 flex items-center justify-between px-md z-10">
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant font-medium group-hover/bar:text-on-surface transition-colors">DRAW</span>
-<span class="font-data-mono-lg text-data-mono-lg text-on-surface-variant group-hover/bar:text-on-surface transition-colors">31.5%</span>
-</div>
-</div>
-<!-- Loss Bar -->
-<div class="relative w-full h-8 bg-surface-container-highest rounded overflow-hidden flex items-center group/bar cursor-default mt-xs">
-<div class="absolute top-0 left-0 bottom-0 bg-error/80 rounded shadow-[0_0_10px_rgba(255,180,171,0.3)] w-[23.3%] transition-all duration-1000 ease-out origin-left scale-x-0" style="animation: scaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.9s forwards;"></div>
-<div class="absolute inset-0 flex items-center justify-between px-md z-10">
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface mix-blend-difference font-medium">MCI WIN</span>
-<span class="font-data-mono-lg text-data-mono-lg text-on-surface mix-blend-difference">23.3%</span>
-</div>
-</div>
-</div>
-<!-- Tactical Data Chips -->
-<div class="flex flex-wrap gap-sm mt-md z-10">
-<div class="bg-primary-fixed-dim/10 text-primary px-sm py-xs rounded flex items-center gap-xs">
-<span class="material-symbols-outlined text-[16px]">speed</span>
-<span class="font-data-mono-sm text-data-mono-sm">Pace Impact +18%</span>
-</div>
-<div class="bg-surface-container-highest px-sm py-xs rounded flex items-center gap-xs text-on-surface-variant border border-outline-variant/20">
-<span class="material-symbols-outlined text-[16px]">timeline</span>
-<span class="font-data-mono-sm text-data-mono-sm">xG Trend: Converging</span>
-</div>
-<div class="bg-surface-container-highest px-sm py-xs rounded flex items-center gap-xs text-on-surface-variant border border-outline-variant/20">
-<span class="material-symbols-outlined text-[16px]">shield</span>
-<span class="font-data-mono-sm text-data-mono-sm">Def Line: High Risk</span>
-</div>
-</div>
-</div>
-<span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant ml-1 mt-1">14:32</span>
-</div>
-</div>
-<!-- Input Area (Glassmorphism) -->
-<div class="absolute bottom-0 left-0 w-full p-container-margin z-20 pointer-events-none">
-<div class="max-w-4xl mx-auto w-full pointer-events-auto">
-<div class="relative bg-surface-container/80 backdrop-blur-xl border border-outline-variant/30 rounded-xl shadow-2xl p-xs flex items-center transition-all duration-300 focus-within:border-primary/60 focus-within:shadow-[0_0_20px_rgba(78,222,163,0.15)] group">
-<button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
-<span class="material-symbols-outlined">add_circle</span>
-</button>
-<input class="flex-1 bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 px-sm py-sm" id="tactical-input" placeholder="Query the tactical engine..." type="text"/>
-<button aria-label="Send query" class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary rounded-lg hover:bg-primary-fixed transition-colors shadow-sm ml-xs group-focus-within:bg-primary-fixed-dim">
-<span class="material-symbols-outlined">send</span>
-</button>
-</div>
-<div class="flex items-center justify-center gap-md mt-xs">
-<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-[9px] opacity-70">Shift + Enter for new line</span>
-</div>
-</div>
-</div>
-<style>
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(1rem); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes scaleIn {
-            from { transform: scaleX(0); }
-            to { transform: scaleX(1); }
-        }
-    </style>
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const input = document.getElementById('tactical-input');
-            const chatStream = document.getElementById('chat-stream');
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed-dim":"#ffb4ac","surface-dim":"#0f1412","surface-variant":"#313633","on-primary-fixed":"#002113","tertiary-container":"#ff7a6f","on-primary-container":"#00422b","secondary-fixed":"#79ff5b","on-secondary-fixed":"#022100","inverse-on-surface":"#2c322f","primary-fixed-dim":"#4edea3","on-secondary":"#053900","secondary-fixed-dim":"#2ae500","inverse-surface":"#dfe4e0","surface-container-highest":"#313633","on-secondary-fixed-variant":"#095300","on-tertiary-fixed-variant":"#8e1214","tertiary":"#ffb4ac","on-secondary-container":"#0f6d00","surface-container-high":"#262b29","secondary-container":"#2ff801","error-container":"#93000a","on-tertiary-fixed":"#410002","on-tertiary":"#690007","on-surface-variant":"#bbcabf","primary-container":"#10b981","outline-variant":"#3c4a42","outline":"#86948a","background":"#0f1412","on-background":"#dfe4e0","tertiary-fixed":"#ffdad6","on-primary":"#003824","on-tertiary-container":"#790009","primary":"#4edea3","surface-tint":"#4edea3","surface-container-lowest":"#0a0f0d","secondary":"#d7ffc5","surface-container":"#1c211e","surface":"#0f1412","on-error-container":"#ffdad6","on-surface":"#dfe4e0","on-error":"#690005","inverse-primary":"#006c49","error":"#ffb4ab","surface-container-low":"#181d1a","primary-fixed":"#6ffbbe","on-primary-fixed-variant":"#005236","surface-bright":"#353a38"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"xl":"32px","xs":"8px","column-gutter":"16px","lg":"24px","md":"16px","container-margin":"24px","base":"4px","sm":"12px"},"fontFamily":{"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"data-mono-sm":["JetBrains Mono"],"label-caps":["Inter"],"body-md":["Inter"],"data-mono-lg":["JetBrains Mono"],"display-xl":["Plus Jakarta Sans"]},"fontSize":{"headline-md":["24px",{"lineHeight":"32px","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"data-mono-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"label-caps":["11px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"data-mono-lg":["18px",{"lineHeight":"24px","fontWeight":"500"}],"display-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.02em","fontWeight":"800"}]}}}}</script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-background font-body-md text-on-surface selection:bg-primary selection:text-on-primary">
+    <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/80 backdrop-blur-2xl border-b border-outline-variant/10">
+        <div class="h-20 w-full px-container-margin flex items-center justify-between">
+            <div class="flex items-center gap-md">
+                <div class="w-10 h-10 bg-primary/10 border border-primary/20 flex items-center justify-center rounded-lg">
+                    <span class="material-symbols-outlined text-primary text-[24px]">query_stats</span>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-headline-md text-headline-md leading-none tracking-tight text-on-surface">FutAnalytica</span>
+                    <span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">Tactical Intelligence</span>
+                </div>
+            </div>
+            <nav class="hidden lg:flex items-center gap-xl h-full" data-active-classes="text-primary border-b-2 border-primary">
+                <a aria-current="page" class="h-full flex items-center font-label-caps uppercase transition-all text-primary border-b-2 border-primary" data-path="tactical-board" href="#">Tactical Board</a>
+                <a class="h-full flex items-center font-label-caps text-label-caps uppercase text-on-surface-variant hover:text-on-surface transition-all border-b-2 border-transparent" data-path="historical-board" href="#">Historical Board</a>
+            </nav>
+            <div class="flex items-center gap-md">
+                <div class="px-md py-xs bg-surface-container-high rounded-full border border-outline-variant/20 flex items-center gap-xs">
+                    <div class="w-2 h-2 rounded-full bg-primary animate-pulse"></div>
+                    <span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant">Live Engine</span>
+                </div>
+                <div class="w-10 h-10 rounded-full border border-outline-variant/30 flex items-center justify-center overflow-hidden hover:border-primary/50 transition-colors cursor-pointer">
+                    <span class="material-symbols-outlined text-on-surface-variant">account_circle</span>
+                </div>
+            </div>
+        </div>
+    </header>
 
-            // Scroll to bottom on load
-            chatStream.scrollTop = chatStream.scrollHeight;
+    <main class="w-full pt-20 bg-background min-h-screen">
+        <div class="flex flex-col w-full h-[calc(100vh-5rem)] relative overflow-hidden bg-surface-container-lowest text-on-surface">
+            
+            <div class="absolute inset-0 pointer-events-none opacity-[0.03]">
+                <div class="absolute left-1/2 top-0 bottom-0 w-px bg-on-surface -translate-x-1/2"></div>
+                <div class="absolute left-1/2 top-1/2 w-64 h-64 border border-on-surface rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+                <div class="absolute left-1/4 top-0 bottom-0 w-px bg-on-surface border-dashed"></div>
+                <div class="absolute right-1/4 top-0 bottom-0 w-px bg-on-surface border-dashed"></div>
+            </div>
 
-            // Focus input simulation
-            setTimeout(() => {
-                input.focus();
-            }, 1500);
-        });
-    </script>
-</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/10 py-xl"><div class="max-w-7xl mx-auto px-container-margin flex flex-col md:flex-row justify-between items-center gap-lg"><div class="flex flex-col gap-xs"><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest">Proprietary Tactical Engine v4.2</span><p class="text-outline text-xs max-w-xs">Advanced predictive modeling for elite football analysis.</p></div><div class="flex items-center gap-xl"><a class="text-outline hover:text-primary transition-colors font-label-caps text-label-caps uppercase" href="#">Analytics Docs</a><a class="text-outline hover:text-primary transition-colors font-label-caps text-label-caps uppercase" href="#">System Status</a></div></div></footer></body></html>
+            <div class="flex-1 overflow-y-auto px-container-margin py-xl flex flex-col gap-xl relative z-10 scroll-smooth pb-32" id="chat-stream">
+                <div class="flex flex-col items-start gap-xs w-full max-w-4xl opacity-0 translate-y-4" style="animation: fadeUp 0.5s ease-out 0.2s forwards;">
+                    <div class="flex items-center gap-sm mb-1">
+                        <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 shadow-[0_0_15px_rgba(78,222,163,0.1)]">
+                            <span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
+                        </div>
+                        <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Engine Insight v4.2</span>
+                    </div>
+                    <div class="bg-surface-container/60 backdrop-blur-md rounded-xl p-lg border border-outline-variant/20 shadow-xl flex flex-col gap-lg w-full relative overflow-hidden group">
+                        <div class="absolute -inset-4 bg-primary/5 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+                        <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl z-10">
+                            Engine online. Conectado ao servidor tático. Como posso ajudar nas análises de hoje?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute bottom-0 left-0 w-full p-container-margin z-20 pointer-events-none">
+                <div class="max-w-4xl mx-auto w-full pointer-events-auto">
+                    <div class="relative bg-surface-container/80 backdrop-blur-xl border border-outline-variant/30 rounded-xl shadow-2xl p-xs flex items-center transition-all duration-300 focus-within:border-primary/60 focus-within:shadow-[0_0_20px_rgba(78,222,163,0.15)] group">
+                        <button class="w-10 h-10 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+                            <span class="material-symbols-outlined">add_circle</span>
+                        </button>
+                        <input class="flex-1 bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/50 px-sm py-sm" id="tactical-input" placeholder="Query the tactical engine..." type="text"/>
+                        
+                        <!-- Adicionei o ID 'send-btn' aqui para facilitar a captura no JS -->
+                        <button id="send-btn" aria-label="Send query" class="w-10 h-10 flex items-center justify-center bg-primary text-on-primary rounded-lg hover:bg-primary-fixed transition-colors shadow-sm ml-xs group-focus-within:bg-primary-fixed-dim">
+                            <span class="material-symbols-outlined">send</span>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-center gap-md mt-xs">
+                        <span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-widest text-[9px] opacity-70">Press Enter to Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                @keyframes fadeUp {
+                    from { opacity: 0; transform: translateY(1rem); }
+                    to { opacity: 1; transform: translateY(0); }
+                }
+                .typing-dot {
+                    animation: typing 1.4s infinite ease-in-out both;
+                }
+                .typing-dot:nth-child(1) { animation-delay: -0.32s; }
+                .typing-dot:nth-child(2) { animation-delay: -0.16s; }
+                @keyframes typing {
+                    0%, 80%, 100% { transform: scale(0); }
+                    40% { transform: scale(1); }
+                }
+            </style>
+
+            <script>
+                // 1. Configurações e Elementos da DOM
+                const FASTAPI_URL = "http://localhost:8000/api/chat"; 
+                
+                const inputEl = document.getElementById('tactical-input');
+                const btnSend = document.getElementById('send-btn');
+                const chatStream = document.getElementById('chat-stream');
+
+                // Helper para pegar a hora atual no formato HH:MM
+                const getHoraAtual = () => {
+                    const agora = new Date();
+                    return `${agora.getHours().toString().padStart(2, '0')}:${agora.getMinutes().toString().padStart(2, '0')}`;
+                };
+
+                // 2. Funções de Renderização (UI)
+                function renderizarMensagemUsuario(texto) {
+                    const html = `
+                        <div class="flex flex-col items-end gap-xs w-full max-w-3xl ml-auto opacity-0 translate-y-4" style="animation: fadeUp 0.4s ease-out forwards;">
+                            <div class="px-md py-sm bg-surface-container-high rounded-xl rounded-tr-sm shadow-sm border border-outline-variant/10">
+                                <p class="font-body-md text-body-md text-on-surface">${texto}</p>
+                            </div>
+                            <span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant mr-1">${getHoraAtual()}</span>
+                        </div>
+                    `;
+                    chatStream.insertAdjacentHTML('beforeend', html);
+                    chatStream.scrollTop = chatStream.scrollHeight;
+                }
+
+                function renderizarMensagemBot(texto) {
+                    const html = `
+                        <div class="flex flex-col items-start gap-xs w-full max-w-4xl opacity-0 translate-y-4" style="animation: fadeUp 0.5s ease-out forwards;">
+                            <div class="flex items-center gap-sm mb-1">
+                                <div class="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center border border-primary/30 shadow-[0_0_15px_rgba(78,222,163,0.1)]">
+                                    <span class="material-symbols-outlined text-primary text-[18px]">query_stats</span>
+                                </div>
+                                <span class="font-label-caps text-label-caps text-primary uppercase tracking-widest">Engine Insight v4.2</span>
+                            </div>
+                            <div class="bg-surface-container/60 backdrop-blur-md rounded-xl p-lg border border-outline-variant/20 shadow-xl flex flex-col gap-lg w-full relative overflow-hidden group">
+                                <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl z-10">${texto}</p>
+                            </div>
+                            <span class="font-data-mono-sm text-data-mono-sm text-on-surface-variant ml-1 mt-1">${getHoraAtual()}</span>
+                        </div>
+                    `;
+                    chatStream.insertAdjacentHTML('beforeend', html);
+                    chatStream.scrollTop = chatStream.scrollHeight;
+                }
+
+                function mostrarDigitando() {
+                    const html = `
+                        <div id="indicador-digitando" class="flex flex-col items-start gap-xs w-full max-w-4xl opacity-0 translate-y-4" style="animation: fadeUp 0.3s ease-out forwards;">
+                            <div class="bg-surface-container/60 backdrop-blur-md rounded-xl p-md border border-outline-variant/20 shadow-xl flex gap-1 items-center">
+                                <div class="w-2 h-2 bg-primary rounded-full typing-dot"></div>
+                                <div class="w-2 h-2 bg-primary rounded-full typing-dot"></div>
+                                <div class="w-2 h-2 bg-primary rounded-full typing-dot"></div>
+                            </div>
+                        </div>
+                    `;
+                    chatStream.insertAdjacentHTML('beforeend', html);
+                    chatStream.scrollTop = chatStream.scrollHeight;
+                }
+
+                function removerDigitando() {
+                    const indicador = document.getElementById('indicador-digitando');
+                    if (indicador) indicador.remove();
+                }
+
+                // 3. Lógica Central de Comunicação (O Garçom)
+                async function processarEnvio() {
+                    const texto = inputEl.value.trim();
+                    if (!texto) return;
+
+                    // Atualiza a tela com o texto do usuário
+                    renderizarMensagemUsuario(texto);
+                    inputEl.value = '';
+                    
+                    // Mostra feedback visual
+                    mostrarDigitando();
+
+                    try {
+                        // Faz o POST para o FastAPI
+                        const response = await fetch(FASTAPI_URL, {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            // Garantindo que a chave do JSON ("mensagem") seja a que seu FastAPI espera
+                            body: JSON.stringify({ mensagem: texto }) 
+                        });
+
+                        const data = await response.json();
+                        removerDigitando();
+                        
+                        // Renderiza a resposta. 
+                        // Assumimos que o FastAPI retorna um JSON do tipo: {"resposta": "texto da IA"}
+                        renderizarMensagemBot(data.resposta || "Resposta recebida, mas formato não reconhecido.");
+
+                    } catch (error) {
+                        removerDigitando();
+                        renderizarMensagemBot("<span class='text-error'>Erro ao conectar com a base tática (Servidor Offline). Verifique se o FastAPI está rodando na porta 8000.</span>");
+                        console.error('Erro:', error);
+                    }
+                }
+
+                // 4. Listeners de Eventos
+                btnSend.addEventListener('click', processarEnvio);
+                
+                inputEl.addEventListener('keypress', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        processarEnvio();
+                    }
+                });
+
+                // Auto-focus ao carregar
+                setTimeout(() => inputEl.focus(), 1500);
+            </script>
+        </div>
+    </main>
+</body>
+</html>
