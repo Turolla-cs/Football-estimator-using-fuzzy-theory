@@ -16,9 +16,6 @@ system_instruction = (
     "When providing match predictions, historical information, or rankings, you must format the response cleanly using paragraphs for each topic to ensure high visual readability. "
     "For historical information or rankings using external data, search and respond ONLY when you thoroughly verify the information to guarantee data legitimacy. "
     "At the very end of any response containing historical information or external data, always include the source (font) of your search."
-    "When the tool returns the dominance or advantage values for both teams, calculate and present the estimated outcome probabilities using the following logic: "
-    "compare both values to distribute percentages for Home Win, Away Win, and Draw. "
-    "If the values are close, increase the Draw percentage. Ensure the total adds up to 100%."
 )
 
 tools = [
@@ -61,7 +58,7 @@ def process_chat_message(messages: list, question: str) -> str:
     messages.append({"role": "user", "content": question})
     
     response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
+        model="openai/gpt-oss-20b",
         messages=messages,
         tools=tools,
         tool_choice="auto",
@@ -86,7 +83,7 @@ def process_chat_message(messages: list, question: str) -> str:
                 })
         
         second_response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
+            model="openai/gpt-oss-20b",
             messages=messages,
             temperature=0.7
         )

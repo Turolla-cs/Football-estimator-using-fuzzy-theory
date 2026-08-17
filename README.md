@@ -3,11 +3,12 @@
 A Python-based AI tool that leverages Fuzzy Logic and real-time football statistics to predict match outcomes. This project integrates the Groq API for natural language processing and uses FastAPI to connect the frontend with local data stored in `dados.json`.
 
 **Data Coverage:** The dataset is updated with the complete 2025/2026 season for the top 5 European leagues and the first 22 rounds of the Brazilian top flight (Brasileirão Série A).
-    The teams that were promoted to the top divisions in Europe will have their statistics reduced by 35%.
+    The teams that were promoted to the top divisions in Europe will have their good statistics reduced by 35% and their bad statistics incremented 35%.
+    If you want to know or change how the teams are being called just look their name on `dados.json` and the same if you want to update the data.
 
 ## Features
 * **Fuzzy Logic Engine:** Calculates offensive and defensive dominance using `scikit-fuzzy`.
-* **AI-Powered Interface:** Chat with the assistant to get match predictions and general football insights.
+* **AI-Powered Interface:** Chat with the assistant to get match predictions.
 
 ## Prerequisites
 * Python 3.10+

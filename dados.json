@@ -401,10 +401,40 @@
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 6,
       "12_porcentagem_de_vitoria": 10.26
+    },
+    "Racing de Santander": {
+      "1_gols_pro": 59.0,
+      "2_chutes_feitos": 9.48,
+      "5_gols_contra_sofridos": 80,
+      "6_chutes_sofridos": 18.7,
+      "7_jogos_sem_fazer_gol": 5,
+      "10_numero_de_jogos": 42,
+      "11_jogos_sem_sofrer_gols": 5,
+      "12_porcentagem_de_vitoria": 38.69
+    },
+    "La Coruña": {
+      "1_gols_pro": 40,
+      "2_chutes_feitos": 8.6,
+      "5_gols_contra_sofridos": 58,
+      "6_chutes_sofridos": 8.7,
+      "7_jogos_sem_fazer_gol": 9,
+      "10_numero_de_jogos": 42,
+      "11_jogos_sem_sofrer_gols": 7,
+      "12_porcentagem_de_vitoria": 34.04
+    },
+    "Málaga": {
+      "1_gols_pro": 49,
+      "2_chutes_feitos": 9.9,
+      "5_gols_contra_sofridos": 66,
+      "6_chutes_sofridos": 19.0,
+      "7_jogos_sem_fazer_gol": 9,
+      "10_numero_de_jogos": 42,
+      "11_jogos_sem_sofrer_gols": 8, 
+      "12_porcentagem_de_vitoria": 32.5 
     }
   },
   "Bundesliga": {
-    "Köln": {
+    "Koln": {
       "1_gols_pro": 49,
       "2_chutes_feitos": 13.38,
       "5_gols_contra_sofridos": 63,
@@ -454,7 +484,7 @@
       "11_jogos_sem_sofrer_gols": 15,
       "12_porcentagem_de_vitoria": 64.71
     },
-    "Borussia Mönchengladbach": {
+    "Borussia Monchengladbach": {
       "1_gols_pro": 42,
       "2_chutes_feitos": 11.65,
       "5_gols_contra_sofridos": 53,
@@ -484,7 +514,7 @@
       "11_jogos_sem_sofrer_gols": 5,
       "12_porcentagem_de_vitoria": 35.29
     },
-    "Bayern München": {
+    "Bayern Munchen": {
       "1_gols_pro": 122,
       "2_chutes_feitos": 19.18,
       "5_gols_contra_sofridos": 36,
@@ -583,6 +613,36 @@
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 1,
       "12_porcentagem_de_vitoria": 13.38
+    },
+    "Schalke": {
+      "1_gols_pro": 31,
+      "2_chutes_feitos": 9.2,
+      "5_gols_contra_sofridos": 39,
+      "6_chutes_sofridos": 15.2,
+      "7_jogos_sem_fazer_gol": 11,
+      "10_numero_de_jogos": 34,
+      "11_jogos_sem_sofrer_gols": 10,
+      "12_porcentagem_de_vitoria": 40.14
+    },
+    "Paderborn": {
+      "1_gols_pro": 38,
+      "2_chutes_feitos": 9.94,
+      "5_gols_contra_sofridos": 61,
+      "6_chutes_sofridos": 16.08,
+      "7_jogos_sem_fazer_gol": 5,
+      "10_numero_de_jogos": 34,
+      "11_jogos_sem_sofrer_gols": 6,
+      "12_porcentagem_de_vitoria": 34.4 
+    },
+    "Elversberg": {
+      "1_gols_pro": 41,
+      "2_chutes_feitos": 9.75,
+      "5_gols_contra_sofridos": 46,
+      "6_chutes_sofridos": 14.57,
+      "7_jogos_sem_fazer_gol": 8,
+      "10_numero_de_jogos": 34,
+      "11_jogos_sem_sofrer_gols": 7,
+      "12_porcentagem_de_vitoria": 34.4
     }
   },
   "Premier League": {
@@ -785,6 +845,36 @@
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 7,
       "12_porcentagem_de_vitoria": 23.95
+    },
+    "Coventry City": {
+      "1_gols_pro": 63,
+      "2_chutes_feitos": 11,
+      "5_gols_contra_sofridos": 61,
+      "6_chutes_sofridos": 16.78,
+      "7_jogos_sem_fazer_gol": 11,
+      "10_numero_de_jogos": 46,
+      "11_jogos_sem_sofrer_gols": 12,
+      "12_porcentagem_de_vitoria": 39.56
+    },
+    "Hull City": {
+      "1_gols_pro": 46,
+      "2_chutes_feitos": 8.2,
+      "5_gols_contra_sofridos": 89,
+      "6_chutes_sofridos": 22.12,
+      "7_jogos_sem_fazer_gol": 16,
+      "10_numero_de_jogos": 46,
+      "11_jogos_sem_sofrer_gols": 10,
+      "12_porcentagem_de_vitoria": 29.67
+    },
+    "Ipswich": {
+      "1_gols_pro": 52,
+      "2_chutes_feitos": 10.52,
+      "5_gols_contra_sofridos": 63,
+      "6_chutes_sofridos": 15.08,
+      "7_jogos_sem_fazer_gol": 9,
+      "10_numero_de_jogos": 46,
+      "11_jogos_sem_sofrer_gols": 11,
+      "12_porcentagem_de_vitoria": 32.5
     }
   },
   "Serie A Italiana": {
@@ -987,6 +1077,36 @@
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 5,
       "12_porcentagem_de_vitoria": 23.95
+    },
+    "Venezia": {
+      "1_gols_pro": 50,
+      "2_chutes_feitos": 11.18,
+      "5_gols_contra_sofridos": 42,
+      "6_chutes_sofridos": 13.64,
+      "7_jogos_sem_fazer_gol": 5,
+      "10_numero_de_jogos": 38,
+      "11_jogos_sem_sofrer_gols": 10,
+      "12_porcentagem_de_vitoria": 41
+    },
+    "Monza": {
+      "1_gols_pro": 40,
+      "2_chutes_feitos": 9.40,
+      "5_gols_contra_sofridos": 43,
+      "6_chutes_sofridos": 16.34,
+      "7_jogos_sem_fazer_gol": 7,
+      "10_numero_de_jogos": 38,
+      "11_jogos_sem_sofrer_gols": 10,
+      "12_porcentagem_de_vitoria": 37.63
+    },
+    "Frosinone": {
+      "1_gols_pro": 49,
+      "2_chutes_feitos": 11.2,
+      "5_gols_contra_sofridos": 46,
+      "6_chutes_sofridos": 19.5,
+      "7_jogos_sem_fazer_gol": 4,
+      "10_numero_de_jogos": 38,
+      "11_jogos_sem_sofrer_gols": 10,
+      "12_porcentagem_de_vitoria": 39.34
     }
   },
   "Ligue 1": {
@@ -1169,6 +1289,26 @@
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 10,
       "12_porcentagem_de_vitoria": 35.29
+    },
+    "Troyes": {
+      "1_gols_pro": 39,
+      "2_chutes_feitos": 9,
+      "5_gols_contra_sofridos": 45,
+      "6_chutes_sofridos": 13.5,
+      "7_jogos_sem_fazer_gol": 9,
+      "10_numero_de_jogos": 34,
+      "11_jogos_sem_sofrer_gols": 8,
+      "12_porcentagem_de_vitoria": 38.2
+    },
+    "Le Mans": {
+      "1_gols_pro": 33,
+      "2_chutes_feitos": 7.13,
+      "5_gols_contra_sofridos": 42,
+      "6_chutes_sofridos": 12.07,
+      "7_jogos_sem_fazer_gol": 8,
+      "10_numero_de_jogos": 34,
+      "11_jogos_sem_sofrer_gols": 6,
+      "12_porcentagem_de_vitoria": 30.58
     }
   }
 }
