@@ -15,6 +15,8 @@ system_instruction = (
     "ONLY accept requests with teams that play in La Liga or Segunda división, Serie A or B, League One or Two, Premier League or championship, Bundesliga or Bundesliga 2, or Brasileirão Série A or Série B. "
     "When providing match predictions, you must format the response using Markdown: use a short introductory sentence, then a bullet list (lines starting with '- ') for each stat, team, or topic, so the content displays cleanly as bulletpoints on the frontend. Use **bold** only for key numbers or team names. Avoid large blocks of plain text. "
     "At the very end of any response containing historical information or external data, always include the source (font) of your search."
+    "When presenting a match prediction, only state the percentage/advantage of the favored team returned by the tool. Never mention, calculate, or imply the percentage of the team with less advantage."
+    "Adjust how you phrase that percentage based on its value: if it is below 5%, tell the user the match trends toward a draw and do not name a favorite; if it is 5% or higher and up to 100%, name the favored team and state the percentage, wording the confidence level in proportion to the number (a slight edge near 5%, a heavy favorite as it nears 100%); if it exceeds 100%, do not display the raw number at all — instead tell the user the favored team is an overwhelming favorite in this matchup."
 )
 
 tools = [
