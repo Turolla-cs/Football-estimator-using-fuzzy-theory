@@ -8,7 +8,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 54.55
+      "12_porcentagem_de_vitoria": 54.55,
+      "aproveitamento_casa": 78.8,
+      "aproveitamento_fora": 42.4
     },
     "Atlético Mineiro": {
       "1_gols_pro": 27,
@@ -18,7 +20,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 38.1
+      "12_porcentagem_de_vitoria": 38.1,
+      "aproveitamento_casa": 59.3,
+      "aproveitamento_fora": 36.1
     },
     "Bahia": {
       "1_gols_pro": 29,
@@ -28,7 +32,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 36.36
+      "12_porcentagem_de_vitoria": 36.36,
+      "aproveitamento_casa": 50.0,
+      "aproveitamento_fora": 50.0
     },
     "Botafogo": {
       "1_gols_pro": 35,
@@ -38,7 +44,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 38.1
+      "12_porcentagem_de_vitoria": 38.1,
+      "aproveitamento_casa": 53.3,
+      "aproveitamento_fora": 42.4
     },
     "Chapecoense": {
       "1_gols_pro": 20,
@@ -48,7 +56,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 1,
-      "12_porcentagem_de_vitoria": 4.76
+      "12_porcentagem_de_vitoria": 4.76,
+      "aproveitamento_casa": 23.3,
+      "aproveitamento_fora": 9.1
     },
     "Corinthians": {
       "1_gols_pro": 24,
@@ -58,7 +68,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 36.36
+      "12_porcentagem_de_vitoria": 36.36,
+      "aproveitamento_casa": 54.5,
+      "aproveitamento_fora": 42.4
     },
     "Coritiba": {
       "1_gols_pro": 27,
@@ -68,7 +80,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 36.36
+      "12_porcentagem_de_vitoria": 36.36,
+      "aproveitamento_casa": 45.5,
+      "aproveitamento_fora": 45.5
     },
     "Cruzeiro": {
       "1_gols_pro": 30,
@@ -78,7 +92,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 40.91
+      "12_porcentagem_de_vitoria": 40.91,
+      "aproveitamento_casa": 52.8,
+      "aproveitamento_fora": 46.7
     },
     "Flamengo": {
       "1_gols_pro": 39,
@@ -88,7 +104,9 @@
       "7_jogos_sem_fazer_gol": 2,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 57.14
+      "12_porcentagem_de_vitoria": 57.14,
+      "aproveitamento_casa": 66.7,
+      "aproveitamento_fora": 63.6
     },
     "Fluminense": {
       "1_gols_pro": 31,
@@ -98,7 +116,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 40.91
+      "12_porcentagem_de_vitoria": 40.91,
+      "aproveitamento_casa": 72.7,
+      "aproveitamento_fora": 33.3
     },
     "Grêmio": {
       "1_gols_pro": 24,
@@ -108,7 +128,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 28.57
+      "12_porcentagem_de_vitoria": 28.57,
+      "aproveitamento_casa": 63.6,
+      "aproveitamento_fora": 13.3
     },
     "Internacional": {
       "1_gols_pro": 23,
@@ -118,7 +140,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 22.73
+      "12_porcentagem_de_vitoria": 22.73,
+      "aproveitamento_casa": 36.4,
+      "aproveitamento_fora": 33.3
     },
     "Mirassol": {
       "1_gols_pro": 24,
@@ -128,7 +152,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 1,
-      "12_porcentagem_de_vitoria": 28.57
+      "12_porcentagem_de_vitoria": 28.57,
+      "aproveitamento_casa": 54.5,
+      "aproveitamento_fora": 18.2
     },
     "Palmeiras": {
       "1_gols_pro": 38,
@@ -138,7 +164,9 @@
       "7_jogos_sem_fazer_gol": 2,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 63.64
+      "12_porcentagem_de_vitoria": 63.64,
+      "aproveitamento_casa": 72.7,
+      "aproveitamento_fora": 72.7
     },
     "Bragantino": {
       "1_gols_pro": 26,
@@ -148,7 +176,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 42.86
+      "12_porcentagem_de_vitoria": 42.86,
+      "aproveitamento_casa": 51.5,
+      "aproveitamento_fora": 46.7
     },
     "Remo": {
       "1_gols_pro": 26,
@@ -158,7 +188,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 22.73
+      "12_porcentagem_de_vitoria": 22.73,
+      "aproveitamento_casa": 42.4,
+      "aproveitamento_fora": 24.2
     },
     "Santos": {
       "1_gols_pro": 29,
@@ -168,7 +200,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 23.81
+      "12_porcentagem_de_vitoria": 23.81,
+      "aproveitamento_casa": 50.0,
+      "aproveitamento_fora": 14.8
     },
     "São Paulo": {
       "1_gols_pro": 26,
@@ -178,7 +212,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 33.33
+      "12_porcentagem_de_vitoria": 33.33,
+      "aproveitamento_casa": 63.0,
+      "aproveitamento_fora": 25.0
     },
     "Vasco": {
       "1_gols_pro": 23,
@@ -188,7 +224,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 21,
       "11_jogos_sem_sofrer_gols": 2,
-      "12_porcentagem_de_vitoria": 23.81
+      "12_porcentagem_de_vitoria": 23.81,
+      "aproveitamento_casa": 51.5,
+      "aproveitamento_fora": 16.7
     },
     "Vitória": {
       "1_gols_pro": 22,
@@ -198,7 +236,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 22,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 31.82
+      "12_porcentagem_de_vitoria": 31.82,
+      "aproveitamento_casa": 73.3,
+      "aproveitamento_fora": 11.1
     }
   },
   "La Liga": {
@@ -210,7 +250,9 @@
       "7_jogos_sem_fazer_gol": 13,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 34.21
+      "12_porcentagem_de_vitoria": 34.21,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Atlético de Madrid": {
       "1_gols_pro": 62,
@@ -220,7 +262,9 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 14,
-      "12_porcentagem_de_vitoria": 55.26
+      "12_porcentagem_de_vitoria": 55.26,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Osasuna": {
       "1_gols_pro": 44,
@@ -230,7 +274,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Alavés": {
       "1_gols_pro": 44,
@@ -240,7 +286,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Elche": {
       "1_gols_pro": 49,
@@ -250,7 +298,9 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 26.32
+      "12_porcentagem_de_vitoria": 26.32,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Barcelona": {
       "1_gols_pro": 95,
@@ -260,7 +310,9 @@
       "7_jogos_sem_fazer_gol": 1,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 15,
-      "12_porcentagem_de_vitoria": 81.58
+      "12_porcentagem_de_vitoria": 81.58,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Getafe": {
       "1_gols_pro": 32,
@@ -270,7 +322,9 @@
       "7_jogos_sem_fazer_gol": 17,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 39.47
+      "12_porcentagem_de_vitoria": 39.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Levante": {
       "1_gols_pro": 47,
@@ -280,7 +334,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Rayo Vallecano": {
       "1_gols_pro": 41,
@@ -290,7 +346,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 31.58
+      "12_porcentagem_de_vitoria": 31.58,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Celta de Vigo": {
       "1_gols_pro": 53,
@@ -300,7 +358,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Espanyol": {
       "1_gols_pro": 43,
@@ -310,7 +370,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 31.58
+      "12_porcentagem_de_vitoria": 31.58,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Betis": {
       "1_gols_pro": 59,
@@ -320,7 +382,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 39.47
+      "12_porcentagem_de_vitoria": 39.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Real Madrid": {
       "1_gols_pro": 77,
@@ -330,7 +394,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 14,
-      "12_porcentagem_de_vitoria": 71.05
+      "12_porcentagem_de_vitoria": 71.05,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Real Sociedad": {
       "1_gols_pro": 59,
@@ -340,7 +406,9 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Sevilla": {
       "1_gols_pro": 46,
@@ -350,7 +418,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 31.58
+      "12_porcentagem_de_vitoria": 31.58,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Valencia": {
       "1_gols_pro": 46,
@@ -360,7 +430,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 34.21
+      "12_porcentagem_de_vitoria": 34.21,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Villarreal": {
       "1_gols_pro": 72,
@@ -370,7 +442,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 57.89
+      "12_porcentagem_de_vitoria": 57.89,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Girona": {
       "1_gols_pro": 25,
@@ -380,7 +454,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 15.39
+      "12_porcentagem_de_vitoria": 15.39,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Mallorca": {
       "1_gols_pro": 31,
@@ -390,7 +466,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 18.82
+      "12_porcentagem_de_vitoria": 18.82,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Real Oviedo": {
       "1_gols_pro": 17,
@@ -400,7 +478,9 @@
       "7_jogos_sem_fazer_gol": 14,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 10.26
+      "12_porcentagem_de_vitoria": 10.26,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Racing de Santander": {
       "1_gols_pro": 59.0,
@@ -410,7 +490,9 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 42,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 38.69
+      "12_porcentagem_de_vitoria": 38.69,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "La Coruña": {
       "1_gols_pro": 40,
@@ -420,7 +502,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 42,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 34.04
+      "12_porcentagem_de_vitoria": 34.04,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Málaga": {
       "1_gols_pro": 49,
@@ -429,8 +513,10 @@
       "6_chutes_sofridos": 19.0,
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 42,
-      "11_jogos_sem_sofrer_gols": 8, 
-      "12_porcentagem_de_vitoria": 32.5 
+      "11_jogos_sem_sofrer_gols": 8,
+      "12_porcentagem_de_vitoria": 32.5,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     }
   },
   "Bundesliga": {
@@ -442,7 +528,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 20.59
+      "12_porcentagem_de_vitoria": 20.59,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Union Berlin": {
       "1_gols_pro": 44,
@@ -452,7 +540,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 29.41
+      "12_porcentagem_de_vitoria": 29.41,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Mainz": {
       "1_gols_pro": 44,
@@ -462,7 +552,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 29.41
+      "12_porcentagem_de_vitoria": 29.41,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Bayer Leverkusen": {
       "1_gols_pro": 68,
@@ -472,7 +564,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 50.0
+      "12_porcentagem_de_vitoria": 50.0,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Borussia Dortmund": {
       "1_gols_pro": 70,
@@ -482,7 +576,9 @@
       "7_jogos_sem_fazer_gol": 2,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 15,
-      "12_porcentagem_de_vitoria": 64.71
+      "12_porcentagem_de_vitoria": 64.71,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Borussia Monchengladbach": {
       "1_gols_pro": 42,
@@ -492,7 +588,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 13,
-      "12_porcentagem_de_vitoria": 26.47
+      "12_porcentagem_de_vitoria": 26.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Eintracht Frankfurt": {
       "1_gols_pro": 61,
@@ -502,7 +600,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 32.35
+      "12_porcentagem_de_vitoria": 32.35,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Augsburg": {
       "1_gols_pro": 45,
@@ -512,7 +612,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 35.29
+      "12_porcentagem_de_vitoria": 35.29,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Bayern Munchen": {
       "1_gols_pro": 122,
@@ -522,7 +624,9 @@
       "7_jogos_sem_fazer_gol": 0,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 82.35
+      "12_porcentagem_de_vitoria": 82.35,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Hamburgo": {
       "1_gols_pro": 40,
@@ -532,7 +636,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 26.47
+      "12_porcentagem_de_vitoria": 26.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "RB Leipzig": {
       "1_gols_pro": 66,
@@ -542,7 +648,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 11,
-      "12_porcentagem_de_vitoria": 58.82
+      "12_porcentagem_de_vitoria": 58.82,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Freiburg": {
       "1_gols_pro": 51,
@@ -552,7 +660,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 38.24
+      "12_porcentagem_de_vitoria": 38.24,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Werder Bremen": {
       "1_gols_pro": 37,
@@ -562,7 +672,9 @@
       "7_jogos_sem_fazer_gol": 13,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 23.53
+      "12_porcentagem_de_vitoria": 23.53,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Hoffenheim": {
       "1_gols_pro": 65,
@@ -572,7 +684,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 52.94
+      "12_porcentagem_de_vitoria": 52.94,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Stuttgart": {
       "1_gols_pro": 71,
@@ -582,7 +696,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 11,
-      "12_porcentagem_de_vitoria": 52.94
+      "12_porcentagem_de_vitoria": 52.94,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Heidenheim": {
       "1_gols_pro": 27,
@@ -592,7 +708,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 1,
-      "12_porcentagem_de_vitoria": 11.47
+      "12_porcentagem_de_vitoria": 11.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Saint Pauli": {
       "1_gols_pro": 19,
@@ -602,7 +720,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 11.47
+      "12_porcentagem_de_vitoria": 11.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Wolfsburg": {
       "1_gols_pro": 29,
@@ -612,7 +732,9 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 1,
-      "12_porcentagem_de_vitoria": 13.38
+      "12_porcentagem_de_vitoria": 13.38,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Schalke": {
       "1_gols_pro": 31,
@@ -622,7 +744,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 40.14
+      "12_porcentagem_de_vitoria": 40.14,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Paderborn": {
       "1_gols_pro": 38,
@@ -632,7 +756,9 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 34.4 
+      "12_porcentagem_de_vitoria": 34.4,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Elversberg": {
       "1_gols_pro": 41,
@@ -642,7 +768,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 34.4
+      "12_porcentagem_de_vitoria": 34.4,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     }
   },
   "Premier League": {
@@ -654,7 +782,9 @@
       "7_jogos_sem_fazer_gol": 3,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 19,
-      "12_porcentagem_de_vitoria": 68.42
+      "12_porcentagem_de_vitoria": 68.42,
+      "aproveitamento_casa": 82.5,
+      "aproveitamento_fora": 66.7
     },
     "Aston Villa": {
       "1_gols_pro": 56,
@@ -664,7 +794,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 50.0
+      "12_porcentagem_de_vitoria": 50.0,
+      "aproveitamento_casa": 66.7,
+      "aproveitamento_fora": 47.4
     },
     "Bournemouth": {
       "1_gols_pro": 58,
@@ -674,7 +806,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 11,
-      "12_porcentagem_de_vitoria": 34.21
+      "12_porcentagem_de_vitoria": 34.21,
+      "aproveitamento_casa": 54.4,
+      "aproveitamento_fora": 45.6
     },
     "Brentford": {
       "1_gols_pro": 55,
@@ -684,7 +818,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 56.1,
+      "aproveitamento_fora": 36.8
     },
     "Brighton": {
       "1_gols_pro": 52,
@@ -694,7 +830,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 57.9,
+      "aproveitamento_fora": 35.1
     },
     "Chelsea": {
       "1_gols_pro": 58,
@@ -704,7 +842,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 45.6,
+      "aproveitamento_fora": 45.6
     },
     "Crystal Palace": {
       "1_gols_pro": 41,
@@ -714,7 +854,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 36.8,
+      "aproveitamento_fora": 42.1
     },
     "Everton": {
       "1_gols_pro": 47,
@@ -724,7 +866,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 11,
-      "12_porcentagem_de_vitoria": 34.21
+      "12_porcentagem_de_vitoria": 34.21,
+      "aproveitamento_casa": 40.4,
+      "aproveitamento_fora": 45.6
     },
     "Fulham": {
       "1_gols_pro": 47,
@@ -734,7 +878,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 39.47
+      "12_porcentagem_de_vitoria": 39.47,
+      "aproveitamento_casa": 61.4,
+      "aproveitamento_fora": 29.8
     },
     "Liverpool": {
       "1_gols_pro": 63,
@@ -744,7 +890,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 44.74
+      "12_porcentagem_de_vitoria": 44.74,
+      "aproveitamento_casa": 63.2,
+      "aproveitamento_fora": 42.1
     },
     "Manchester City": {
       "1_gols_pro": 77,
@@ -754,7 +902,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 16,
-      "12_porcentagem_de_vitoria": 60.53
+      "12_porcentagem_de_vitoria": 60.53,
+      "aproveitamento_casa": 78.9,
+      "aproveitamento_fora": 57.9
     },
     "Manchester United": {
       "1_gols_pro": 69,
@@ -764,7 +914,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 52.63
+      "12_porcentagem_de_vitoria": 52.63,
+      "aproveitamento_casa": 73.7,
+      "aproveitamento_fora": 50.9
     },
     "Newcastle": {
       "1_gols_pro": 53,
@@ -774,7 +926,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 56.1,
+      "aproveitamento_fora": 29.8
     },
     "Nottingham Forest": {
       "1_gols_pro": 48,
@@ -784,7 +938,9 @@
       "7_jogos_sem_fazer_gol": 14,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 35.1,
+      "aproveitamento_fora": 42.1
     },
     "Tottenham": {
       "1_gols_pro": 48,
@@ -794,7 +950,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 26.32
+      "12_porcentagem_de_vitoria": 26.32,
+      "aproveitamento_casa": 26.3,
+      "aproveitamento_fora": 45.6
     },
     "West Ham": {
       "1_gols_pro": 46,
@@ -804,7 +962,9 @@
       "7_jogos_sem_fazer_gol": 13,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 26.32
+      "12_porcentagem_de_vitoria": 26.32,
+      "aproveitamento_casa": 38.6,
+      "aproveitamento_fora": 29.8
     },
     "Wolverhampton": {
       "1_gols_pro": 27,
@@ -814,7 +974,9 @@
       "7_jogos_sem_fazer_gol": 19,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 4,
-      "12_porcentagem_de_vitoria": 7.89
+      "12_porcentagem_de_vitoria": 7.89,
+      "aproveitamento_casa": 24.6,
+      "aproveitamento_fora": 10.5
     },
     "Burnley": {
       "1_gols_pro": 25,
@@ -824,7 +986,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 6.84
+      "12_porcentagem_de_vitoria": 6.84,
+      "aproveitamento_casa": 22.8,
+      "aproveitamento_fora": 15.8
     },
     "Leeds": {
       "1_gols_pro": 32,
@@ -834,7 +998,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 18.82
+      "12_porcentagem_de_vitoria": 18.82,
+      "aproveitamento_casa": 56.1,
+      "aproveitamento_fora": 26.3
     },
     "Sunderland": {
       "1_gols_pro": 27,
@@ -844,7 +1010,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 23.95
+      "12_porcentagem_de_vitoria": 23.95,
+      "aproveitamento_casa": 57.9,
+      "aproveitamento_fora": 36.8
     },
     "Coventry City": {
       "1_gols_pro": 63,
@@ -854,7 +1022,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 46,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 39.56
+      "12_porcentagem_de_vitoria": 39.56,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Hull City": {
       "1_gols_pro": 46,
@@ -864,7 +1034,9 @@
       "7_jogos_sem_fazer_gol": 16,
       "10_numero_de_jogos": 46,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 29.67
+      "12_porcentagem_de_vitoria": 29.67,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Ipswich": {
       "1_gols_pro": 52,
@@ -874,7 +1046,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 46,
       "11_jogos_sem_sofrer_gols": 11,
-      "12_porcentagem_de_vitoria": 32.5
+      "12_porcentagem_de_vitoria": 32.5,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     }
   },
   "Serie A Italiana": {
@@ -886,7 +1060,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 13,
-      "12_porcentagem_de_vitoria": 39.47
+      "12_porcentagem_de_vitoria": 39.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Bologna": {
       "1_gols_pro": 49,
@@ -896,7 +1072,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 42.11
+      "12_porcentagem_de_vitoria": 42.11,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Cagliari": {
       "1_gols_pro": 40,
@@ -906,7 +1084,9 @@
       "7_jogos_sem_fazer_gol": 14,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Como": {
       "1_gols_pro": 65,
@@ -916,7 +1096,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 19,
-      "12_porcentagem_de_vitoria": 52.63
+      "12_porcentagem_de_vitoria": 52.63,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Fiorentina": {
       "1_gols_pro": 41,
@@ -926,7 +1108,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 23.68
+      "12_porcentagem_de_vitoria": 23.68,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Genoa": {
       "1_gols_pro": 41,
@@ -936,7 +1120,9 @@
       "7_jogos_sem_fazer_gol": 15,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 26.32
+      "12_porcentagem_de_vitoria": 26.32,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Hellas Verona": {
       "1_gols_pro": 25,
@@ -946,7 +1132,9 @@
       "7_jogos_sem_fazer_gol": 20,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 7.89
+      "12_porcentagem_de_vitoria": 7.89,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Inter de Milão": {
       "1_gols_pro": 89,
@@ -956,7 +1144,9 @@
       "7_jogos_sem_fazer_gol": 2,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 18,
-      "12_porcentagem_de_vitoria": 71.05
+      "12_porcentagem_de_vitoria": 71.05,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Juventus": {
       "1_gols_pro": 61,
@@ -966,7 +1156,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 16,
-      "12_porcentagem_de_vitoria": 50.0
+      "12_porcentagem_de_vitoria": 50.0,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Lazio": {
       "1_gols_pro": 41,
@@ -976,7 +1168,9 @@
       "7_jogos_sem_fazer_gol": 17,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 15,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Lecce": {
       "1_gols_pro": 28,
@@ -986,7 +1180,9 @@
       "7_jogos_sem_fazer_gol": 19,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 26.32
+      "12_porcentagem_de_vitoria": 26.32,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Milan": {
       "1_gols_pro": 53,
@@ -996,7 +1192,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 15,
-      "12_porcentagem_de_vitoria": 52.63
+      "12_porcentagem_de_vitoria": 52.63,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Napoli": {
       "1_gols_pro": 58,
@@ -1006,7 +1204,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 15,
-      "12_porcentagem_de_vitoria": 60.53
+      "12_porcentagem_de_vitoria": 60.53,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Parma": {
       "1_gols_pro": 28,
@@ -1016,7 +1216,9 @@
       "7_jogos_sem_fazer_gol": 16,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 13,
-      "12_porcentagem_de_vitoria": 28.95
+      "12_porcentagem_de_vitoria": 28.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Roma": {
       "1_gols_pro": 59,
@@ -1026,7 +1228,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 18,
-      "12_porcentagem_de_vitoria": 60.53
+      "12_porcentagem_de_vitoria": 60.53,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Torino": {
       "1_gols_pro": 44,
@@ -1036,7 +1240,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 31.58
+      "12_porcentagem_de_vitoria": 31.58,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Udinese": {
       "1_gols_pro": 45,
@@ -1046,7 +1252,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 11,
-      "12_porcentagem_de_vitoria": 36.84
+      "12_porcentagem_de_vitoria": 36.84,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Cremonese": {
       "1_gols_pro": 21,
@@ -1056,7 +1264,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 13.68
+      "12_porcentagem_de_vitoria": 13.68,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Pisa": {
       "1_gols_pro": 17,
@@ -1066,7 +1276,9 @@
       "7_jogos_sem_fazer_gol": 14,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 3,
-      "12_porcentagem_de_vitoria": 3.42
+      "12_porcentagem_de_vitoria": 3.42,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Sassuolo": {
       "1_gols_pro": 30,
@@ -1076,7 +1288,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 5,
-      "12_porcentagem_de_vitoria": 23.95
+      "12_porcentagem_de_vitoria": 23.95,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Venezia": {
       "1_gols_pro": 50,
@@ -1086,17 +1300,21 @@
       "7_jogos_sem_fazer_gol": 5,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 41
+      "12_porcentagem_de_vitoria": 41,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Monza": {
       "1_gols_pro": 40,
-      "2_chutes_feitos": 9.40,
+      "2_chutes_feitos": 9.4,
       "5_gols_contra_sofridos": 43,
       "6_chutes_sofridos": 16.34,
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 37.63
+      "12_porcentagem_de_vitoria": 37.63,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Frosinone": {
       "1_gols_pro": 49,
@@ -1106,7 +1324,9 @@
       "7_jogos_sem_fazer_gol": 4,
       "10_numero_de_jogos": 38,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 39.34
+      "12_porcentagem_de_vitoria": 39.34,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     }
   },
   "Ligue 1": {
@@ -1118,7 +1338,9 @@
       "7_jogos_sem_fazer_gol": 12,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 26.47
+      "12_porcentagem_de_vitoria": 26.47,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Auxerre": {
       "1_gols_pro": 34,
@@ -1128,7 +1350,9 @@
       "7_jogos_sem_fazer_gol": 16,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 23.53
+      "12_porcentagem_de_vitoria": 23.53,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Brest": {
       "1_gols_pro": 43,
@@ -1138,7 +1362,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 29.41
+      "12_porcentagem_de_vitoria": 29.41,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Le Havre": {
       "1_gols_pro": 32,
@@ -1148,7 +1374,9 @@
       "7_jogos_sem_fazer_gol": 14,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 20.59
+      "12_porcentagem_de_vitoria": 20.59,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Lens": {
       "1_gols_pro": 66,
@@ -1158,7 +1386,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 12,
-      "12_porcentagem_de_vitoria": 64.71
+      "12_porcentagem_de_vitoria": 64.71,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Lille": {
       "1_gols_pro": 52,
@@ -1168,7 +1398,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 13,
-      "12_porcentagem_de_vitoria": 52.94
+      "12_porcentagem_de_vitoria": 52.94,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Lorient": {
       "1_gols_pro": 48,
@@ -1178,7 +1410,9 @@
       "7_jogos_sem_fazer_gol": 10,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 32.35
+      "12_porcentagem_de_vitoria": 32.35,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Lyon": {
       "1_gols_pro": 53,
@@ -1188,7 +1422,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 15,
-      "12_porcentagem_de_vitoria": 52.94
+      "12_porcentagem_de_vitoria": 52.94,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Marseille": {
       "1_gols_pro": 63,
@@ -1198,7 +1434,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 52.94
+      "12_porcentagem_de_vitoria": 52.94,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Metz": {
       "1_gols_pro": 32,
@@ -1208,7 +1446,9 @@
       "7_jogos_sem_fazer_gol": 15,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 8.82
+      "12_porcentagem_de_vitoria": 8.82,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Monaco": {
       "1_gols_pro": 60,
@@ -1218,7 +1458,9 @@
       "7_jogos_sem_fazer_gol": 7,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 7,
-      "12_porcentagem_de_vitoria": 47.06
+      "12_porcentagem_de_vitoria": 47.06,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Nantes": {
       "1_gols_pro": 29,
@@ -1228,7 +1470,9 @@
       "7_jogos_sem_fazer_gol": 15,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 14.71
+      "12_porcentagem_de_vitoria": 14.71,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Nice": {
       "1_gols_pro": 37,
@@ -1238,7 +1482,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 20.59
+      "12_porcentagem_de_vitoria": 20.59,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Paris FC": {
       "1_gols_pro": 47,
@@ -1248,7 +1494,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 32.35
+      "12_porcentagem_de_vitoria": 32.35,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Paris Saint-Germain": {
       "1_gols_pro": 74,
@@ -1258,7 +1506,9 @@
       "7_jogos_sem_fazer_gol": 2,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 18,
-      "12_porcentagem_de_vitoria": 70.59
+      "12_porcentagem_de_vitoria": 70.59,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Rennes": {
       "1_gols_pro": 59,
@@ -1268,7 +1518,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 50.0
+      "12_porcentagem_de_vitoria": 50.0,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Strasbourg": {
       "1_gols_pro": 58,
@@ -1278,7 +1530,9 @@
       "7_jogos_sem_fazer_gol": 6,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 9,
-      "12_porcentagem_de_vitoria": 44.12
+      "12_porcentagem_de_vitoria": 44.12,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Toulouse": {
       "1_gols_pro": 47,
@@ -1288,7 +1542,9 @@
       "7_jogos_sem_fazer_gol": 11,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 10,
-      "12_porcentagem_de_vitoria": 35.29
+      "12_porcentagem_de_vitoria": 35.29,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Troyes": {
       "1_gols_pro": 39,
@@ -1298,7 +1554,9 @@
       "7_jogos_sem_fazer_gol": 9,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 8,
-      "12_porcentagem_de_vitoria": 38.2
+      "12_porcentagem_de_vitoria": 38.2,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     },
     "Le Mans": {
       "1_gols_pro": 33,
@@ -1308,7 +1566,9 @@
       "7_jogos_sem_fazer_gol": 8,
       "10_numero_de_jogos": 34,
       "11_jogos_sem_sofrer_gols": 6,
-      "12_porcentagem_de_vitoria": 30.58
+      "12_porcentagem_de_vitoria": 30.58,
+      "aproveitamento_casa": 0,
+      "aproveitamento_fora": 0
     }
   }
 }

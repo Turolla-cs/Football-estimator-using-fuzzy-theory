@@ -37,6 +37,8 @@ def search_api_data(team_name: str) -> dict:
         shtos_received = team_stats["6_chutes_sofridos"]
         shots_made = team_stats["2_chutes_feitos"]
         scoreless_games = team_stats["7_jogos_sem_fazer_gol"]
+        Percentage_Home_games = team_stats["aproveitamento_casa"]
+        Percentage_Away_games = team_stats["aproveitamento_fora"]
         
         
         clean_data = {
@@ -45,6 +47,8 @@ def search_api_data(team_name: str) -> dict:
                 "wins_percentage": float(win_percentage),
                 "shots_made_per_game": float(shots_made),
                 "scoreless_percentage": float((scoreless_games/num_games)*100),
+                "Percentage of home points won": float(Percentage_Home_games/100),
+                "Percentage of away points won": float(Percentage_Away_games/100),
             },
             "defense": {
                 "goals_suffered_per_game": float(goals_against),

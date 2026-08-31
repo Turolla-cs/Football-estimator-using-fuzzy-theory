@@ -14,14 +14,14 @@ class Result:
 gamesPlayed = ctrl.Antecedent(np.arange(0,39,1), 'Number of games played so far')
 
 #Attack sub system
-goalsAttack = ctrl.Antecedent(np.arange(0,101,1), 'Goal scored per game')
+goalsAttack = ctrl.Antecedent(np.arange(0,6,1), 'Goal scored per game')
 winPercentage = ctrl.Antecedent(np.arange(0,101,1), 'Percentage of games won')
 scorelessPercentage = ctrl.Antecedent(np.arange(0,101,1), 'Percentage of scoreless games')
 shotsAttack = ctrl.Antecedent(np.arange(0,31,1), 'Shots made per game')
 offensiveDominance = ctrl.Consequent(np.arange(0,11,1), 'Offensive dominance')
 
 #Defensive sub system
-goalsDefense = ctrl.Antecedent(np.arange(0,101,1), 'Goal suffered per game')
+goalsDefense = ctrl.Antecedent(np.arange(0,6,1), 'Goal suffered per game')
 cleansheetPercentage= ctrl.Antecedent(np.arange(0,101,1), 'Percentage of clean sheet games')
 shotsDefense = ctrl.Antecedent(np.arange(0,31,1), 'Shots suffered per game')
 defensiveDominance = ctrl.Consequent(np.arange(0,11,1), 'Defensive dominance')
@@ -227,8 +227,15 @@ def calculate_fuzzy_prediction(home_team_attack, home_team_defense, away_team_at
     
 
     simulator_result.compute()
+
+    homeBasepred = simulator_result.output['Home Winning prediction']
+    awayBasepred = simulator_result.output['Away Winning prediction']
+
+    aproveitamentoHome = home_team_attack["Percentage of home points won"]
+    aproveitamentoFora = away_team_attack["Percentage of away points won"]
+
     x = Result(
-        output1=simulator_result.output['Home Winning prediction'], 
-        output2=simulator_result.output['Away Winning prediction']
+        output1 = homeBasepred + (aproveitamentoHome * homeBasepred), 
+        output2 = awayBasepred + (aproveitamentoFora * awayBasepred)
     )
     return x
